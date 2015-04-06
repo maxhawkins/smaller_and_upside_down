@@ -1,0 +1,9 @@
+{
+  "name": "smaller_and_upside_down",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

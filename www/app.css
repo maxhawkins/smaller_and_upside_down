@@ -1,0 +1,120 @@
+body {
+	padding: 0;
+	font-family: "Avenir Next", "Avenir";
+	font-size: 18px;
+	background: #DDD;
+
+	/*TODO(maxhawkins): responsive*/
+	min-width: 800px;
+}
+section {
+	width: 100%;
+	min-height: 500px;
+}
+#title {
+	background: url('/images/render.jpg') no-repeat center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background*/
+	height: 100%;
+	min-height: 800px;
+	text-align: center;
+}
+#title-text {
+	padding: 3em 0;
+	background: white;
+}
+#logo {
+	text-transform: uppercase;
+	font-size: 3em;
+	margin: 0;
+}
+#subtitle {
+	font-weight: 400;
+	font-size: 32px;
+	margin: 0;
+}
+.raised {
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
+	z-index: 10;
+	position: relative;
+}
+#intro {
+	background: #F5A623;
+	color: white;
+	font-size: 32px;
+	z-index: 20;
+}
+#intro h2 {
+	font-weight: bold;
+	font-size: 48px;
+	margin-top: 0;
+}
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 100px 50px;
+	padding: 10vw 5vw;
+}
+.container :first-child {
+	margin-top: 0;
+}
+.container :last-child {
+	margin-bottom: 0;
+}
+#ampersand {
+	color: #F5A623;
+	transform: rotate(-60deg);
+	display: inline-block;
+	vertical-align: 0.1em;
+}
+#gallery {
+	background: white;
+}
+#how {
+	background: white;
+}
+a {
+	color: inherit;
+}
+.bio {
+	margin-top: 2em;
+	overflow: auto;
+	clear: both;
+}
+.bio img {
+	width: 300px;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+}
+.bio b {
+	font-weight: 500;
+}
+footer {
+	text-align: center;
+	margin-bottom: 5em;
+}
+.copyright {
+	font-size: 14px;
+}
+#map {
+	position: relative;
+}
+#map-canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+#directions {
+	margin-left: -40px;
+	width: 300px;
+	background: white;
+	padding: 40px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
+	background: #F5A623;
+	color: white;
+}
