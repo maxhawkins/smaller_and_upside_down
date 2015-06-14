@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
   }
 }

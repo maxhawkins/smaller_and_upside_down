@@ -12,10 +12,9 @@ section {
 	min-height: 500px;
 }
 #title {
-	background: url('/images/render.jpg') no-repeat center;
+	background: url('/images/banner.jpg') no-repeat center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background*/
 	height: 100%;
 	min-height: 800px;
 	text-align: center;
@@ -53,8 +52,8 @@ section {
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
-	padding: 100px 50px;
-	padding: 10vw 5vw;
+	padding: 150px 50px;
+	overflow: auto;
 }
 .container :first-child {
 	margin-top: 0;
@@ -64,15 +63,50 @@ section {
 }
 #ampersand {
 	color: #F5A623;
-	transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+	    -ms-transform: rotate(-60deg);
+	        transform: rotate(-60deg);
 	display: inline-block;
 	vertical-align: 0.1em;
 }
 #gallery {
-	background: white;
+	/*background: white;*/
+}
+#play-button {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	bottom: 25%;
+	left: 50%;
+	left: calc(50% - 40px);
+	opacity: 0.85;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	background-image: url('/images/play-button.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#play-button:hover {
+	cursor: pointer;
+	opacity: 1;
 }
 #how {
 	background: white;
+}
+#how h5 {
+	clear: both;
+}
+#how img {
+	width: 300px;
+	height: auto;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 40px;
 }
 a {
 	color: inherit;
@@ -111,10 +145,40 @@ footer {
 }
 #directions {
 	margin-left: -40px;
-	width: 300px;
+	width: 500px;
 	background: white;
 	padding: 40px;
 	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.20);
 	background: #F5A623;
 	color: white;
+}
+#grid {
+	margin-top: 3em;
+	position: relative;
+	width: 100%;
+}
+#grid figure {
+	width: 48%;
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	margin-bottom: 25px;
+	margin-right: 1%;
+}
+#grid figcaption {
+	margin-top: 10px;
+}
+#grid img {
+	width: 100%;
+	height: auto;
+}
+@media screen and (max-device-width: 480px) {
+	#grid figure {
+		width: 100%;
+		margin-right: 0;
+		height: auto;
+	}	
+}
+#ack {
+	margin-top: 5em;
 }
