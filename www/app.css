@@ -52,7 +52,7 @@ section {
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
-	padding: 150px 50px;
+	padding: 100px 50px;
 	overflow: auto;
 }
 .container :first-child {
