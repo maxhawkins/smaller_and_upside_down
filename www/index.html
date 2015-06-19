@@ -27,7 +27,7 @@
 			<h1 id="logo">Smaller <span id="ampersand">&amp;</span> Upside Down</h1>
 			<h2 id="subtitle">An Interactive Exhibit of 3D-Printed Distorting Lenses</h2>
 		</div>
-		<!-- <div id="play-button"></div> -->
+		<div id="play-button"></div>
 	</section>
 	<section id="intro" class="raised">
 		<div class="container">
@@ -105,6 +105,12 @@
 	<footer>
 		<div><a href="mailto:info@smallerandupsidedown.com" target="_blank">Contact</a>&ensp;&middot;&ensp;<a href="/press_kit.zip">Press Kit</a>&ensp;&middot;&ensp; Copyright 2015</div>
 	</footer>
+	<div id="player-overlay">
+		<div id="player-container">
+			<img id="close-button" src="/images/close.svg" width=50 height=50>
+			<div id="player"></div>
+		</div>
+	</div>
 
 	<script src="/bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 	<script>
@@ -116,5 +122,6 @@
 	  ga('create', 'UA-61717548-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<script src="app.js"></script>
 </body>
 </html>
