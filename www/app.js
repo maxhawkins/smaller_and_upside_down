@@ -13,7 +13,7 @@ function onYouTubePlayerAPIReady() {
   player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: 'EyQce3w-NIA',
+    videoId: 'lNq8hQnbk-c',
     playsinline: 0, // full screen on iOS
   });
 }
