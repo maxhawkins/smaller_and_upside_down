@@ -3,9 +3,6 @@ body {
 	font-family: "Avenir Next", "Avenir";
 	font-size: 18px;
 	background: #DDD;
-
-	/*TODO(maxhawkins): responsive*/
-	min-width: 800px;
 }
 section {
 	width: 100%;
@@ -16,7 +13,6 @@ section {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
-	min-height: 800px;
 	text-align: center;
 }
 #title-text {
@@ -25,13 +21,51 @@ section {
 }
 #logo {
 	text-transform: uppercase;
-	font-size: 3em;
+	font-size: 52px;
 	margin: 0;
 }
 #subtitle {
 	font-weight: 400;
 	font-size: 32px;
 	margin: 0;
+}
+@media (max-width: 900px) {
+	#title-text {
+		padding: 2em 0;
+	}
+    #logo {
+        font-size: 48px;
+    }
+    #subtitle {
+    	font-size: 24px;
+    }
+}
+@media (max-width: 700px) {
+    #logo {
+        font-size: 32px;
+    }
+    #subtitle {
+    	font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    #logo {
+        font-size: 24px;
+    }
+    #subtitle {
+    	font-size: 14px;
+    }
+}
+@media (max-width: 400px) {
+	#title-text {
+		padding: 1em 0;
+	}
+    #logo {
+        font-size: 18px;
+    }
+    #subtitle {
+    	font-size: 12px;
+    }
 }
 .raised {
 	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
@@ -41,12 +75,11 @@ section {
 #intro {
 	background: #F5A623;
 	color: white;
-	font-size: 32px;
+	font-size: 1.75em;
 	z-index: 20;
 }
 #intro h2 {
 	font-weight: bold;
-	font-size: 48px;
 	margin-top: 0;
 }
 .container {
@@ -54,6 +87,11 @@ section {
 	margin: 0 auto;
 	padding: 100px 50px;
 	overflow: auto;
+}
+@media (max-width: 500px) {
+    .container {
+    	padding: 50px 25px;
+    }
 }
 .container :first-child {
 	margin-top: 0;
@@ -80,7 +118,7 @@ section {
 	height: 100px;
 	top: 300px;
 	left: 50%;
-	left: calc(50% - 40px);
+	left: calc(50% - 50px);
 	opacity: 0.7;
 	-moz-transition: opacity 0.2s ease-in-out;
 	-o-transition: opacity 0.2s ease-in-out;
@@ -169,6 +207,7 @@ a {
 	height: auto;
 	float: left;
 	margin-right: 30px;
+	margin-bottom: 10px;
 }
 .bio b {
 	font-weight: 500;

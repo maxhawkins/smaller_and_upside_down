@@ -31,3 +31,7 @@ function hidePlayer() {
 playButton.addEventListener('click', showPlayer, false);
 overlay.addEventListener('click', hidePlayer, false);
 closeButton.addEventListener('click', hidePlayer, false);
+
+var titleDiv = document.getElementById('title');
+titleDiv.style.height = window.innerHeight + 'px';
+
