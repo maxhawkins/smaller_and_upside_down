@@ -29,6 +29,11 @@ section {
 	font-size: 32px;
 	margin: 0;
 }
+.exhibit-date {
+    display: inline-block;
+    width: 200px;
+    font-weight: 500;
+}
 @media (max-width: 900px) {
 	#title-text {
 		padding: 2em 0;
@@ -46,6 +51,9 @@ section {
     }
     #subtitle {
     	font-size: 18px;
+    }
+    .exhibit-date {
+        width: 100%;
     }
 }
 @media (max-width: 500px) {
@@ -108,7 +116,7 @@ section {
 	vertical-align: 0.1em;
 }
 #gallery {
-	/*background: white;*/
+	background: white;
 }
 #play-button {
 	margin: 0;
